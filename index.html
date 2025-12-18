@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma page web</title>
+  <style>
+    :root { --bg: #0f172a; --text: #e5e7eb; --accent: #38bdf8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 80% 20%, #1f2937 0%, var(--bg) 50%);
+      color: var(--text);
+    }
+    header {
+      padding: 2rem 1.25rem; border-bottom: 1px solid #1f2937; backdrop-filter: blur(4px);
+      position: sticky; top: 0; background: rgba(15,23,42,0.6);
+    }
+    nav { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+    nav a { color: var(--text); text-decoration: none; opacity: 0.85; }
+    nav a:hover { color: var(--accent); opacity: 1; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem; }
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center;
+    }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin: 0 0 0.75rem; }
+    .hero p { font-size: clamp(1rem, 2.2vw, 1.2rem); opacity: 0.9; }
+    .cta {
+      display: inline-block; margin-top: 1rem; padding: 0.75rem 1rem; border: 1px solid var(--accent); color: var(--accent);
+      border-radius: 8px; text-decoration: none;
+    }
+    .cta:hover { background: rgba(56,189,248,0.12); }
+    .card-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.04); border: 1px solid #1f2937; border-radius: 12px; padding: 1rem;
+    }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+    footer {
+      border-top: 1px solid #1f2937; padding: 1.5rem 1.25rem; text-align: center; opacity: 0.8;
+    }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#"><strong>Logo</strong></a>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Un titre clair qui dit l’essentiel</h1>
+        <p>Explique en une phrase ce que tu offres et pour qui. Évite le jargon; parle bénéfices concrets.</p>
+        <a class="cta" href="#contact">Commencer</a>
+      </div>
+      <div class="card">
+        <h3>Preuve sociale</h3>
+        <p>Ajoute un témoignage, un chiffre clé ou un logo client pour rassurer.</p>
+      </div>
+    </section>
+
+    <section id="services" class="card-grid">
+      <article class="card">
+        <h3>Service 1</h3>
+        <p>Résultat que le client obtient, pas la liste des tâches.</p>
+      </article>
+      <article class="card">
+        <h3>Service 2</h3>
+        <p>Explique en une phrase le bénéfice principal.</p>
+      </article>
+      <article class="card">
+        <h3>Service 3</h3>
+        <p>Ajoute un exemple concret ou un mini cas d’usage.</p>
+      </article>
+    </section>
+
+    <section id="apropos" class="container">
+      <h2>À propos</h2>
+      <p>Qui tu es, ton approche, et pourquoi on peut te faire confiance (certifs, années d’expérience, spécialités).</p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+        <label>Nom<br><input type="text" name="nom" required></label><br><br>
+        <label>Email<br><input type="email" name="email" required></label><br><br>
+        <label>Message<br><textarea name="message" rows="5" required></textarea></label><br><br>
+        <button type="submit" class="cta">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Ton nom ou ta société · Mentions légales · RGPD
+  </footer>
+</body>
+</html>
