@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Prénom Nom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .identite h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .identite h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #555;
+        }
+        .contact {
+            text-align: right;
+            font-size: 14px;
+        }
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .experience, .formation {
+            margin-bottom: 10px;
+        }
+        .experience h4, .formation h4 {
+            margin: 0;
+            font-size: 15px;
+        }
+        .experience .infos, .formation .infos {
+            font-size: 13px;
+            color: #666;
+        }
+        ul {
+            margin: 5px 0 0 18px;
+            padding: 0;
+        }
+        .skills-list, .langues-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .tag {
+            background-color: #e6e6e6;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <header>
+        <div class="identite">
+            <h1>Prénom Nom</h1>
+            <h2>Intitulé du poste / Spécialité</h2>
+        </div>
+        <div class="contact">
+            <div>Adresse complète</div>
+            <div>Tél : 06 00 00 00 00</div>
+            <div>Email : prenom.nom@email.com</div>
+            <div>LinkedIn / GitHub / Portfolio</div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h3>Profil</h3>
+        <p>
+            Court paragraphe de 3–4 lignes présentant ton expérience, tes domaines d’expertise
+            et ce que tu recherches (ex : développeur web front-end avec 3 ans d’expérience,
+            spécialisé en HTML, CSS, JavaScript, à la recherche d’un poste dans une équipe agile…).
+        </p>
+    </section>
+
+    <section class="section">
+        <h3>Compétences</h3>
+        <div class="skills-list">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git</span>
+            <span class="tag">Responsive design</span>
+            <span class="tag">…</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Expériences professionnelles</h3>
+
+        <div class="experience">
+            <h4>Intitulé du poste – Nom de l’entreprise</h4>
+            <div class="infos">Ville, Pays • Dates (ex : 2022 – Aujourd’hui)</div>
+            <ul>
+                <li>Responsabilité / réalisation principale 1.</li>
+                <li>Responsabilité / réalisation principale 2.</li>
+                <li>Technologies utilisées : HTML, CSS, JS, etc.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h4>Intitulé du poste – Nom de l’entreprise</h4>
+            <div class="infos">Ville, Pays • Dates</div>
+            <ul>
+                <li>Responsabilité / réalisation principale 1.</li>
+                <li>Responsabilité / réalisation principale 2.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Formation</h3>
+
+        <div class="formation">
+            <h4>Nom du diplôme – Établissement</h4>
+            <div class="infos">Ville, Pays • Dates</div>
+            <p>Brève description (spécialité, mention, projets marquants…).</p>
+        </div>
+
+        <div class="formation">
+            <h4>Autre formation / certification</h4>
+            <div class="infos">Organisme • Date</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Langues</h3>
+        <div class="langues-list">
+            <span class="tag">Français – Langue maternelle</span>
+            <span class="tag">Anglais – Courant</span>
+            <span class="tag">…</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3>Centres d’intérêt</h3>
+        <p>Ex : veille technologique, cybersécurité, photographie, sport, bénévolat…</p>
+    </section>
+</div>
+</body>
+</html>
